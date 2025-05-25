@@ -21,7 +21,7 @@
 
     {% for r in open_restaurants %}
       <div class="mb-2">
-        <strong>{{ r.name }}</strong> - 
+<strong style="font-weight: 900; background-color: yellow; padding: 2px 4px; border-radius: 4px;">{{ r.name }}</strong>
         <span class="text-success">{{ r.status }}</span>
         <a href="/delete/{{ loop.index0 }}" class="btn btn-sm btn-outline-danger ms-2">🗑️ Delete</a>
       </div>
